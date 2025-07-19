@@ -1,4 +1,4 @@
-# ✈ Flight Fare Prediction Project
+# ☁️ Air Quality Index (AQI) Prediction
 
 ## 📄 Abstract
 
