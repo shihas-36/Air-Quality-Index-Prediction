@@ -34,10 +34,10 @@ The first request will be slow as waking up Render backend initially takes a few
 ### Homepage
 ![Homepage](screenshot/home.png)
 
-### Prediction Page
+### Prediction-Graph 
 ![Prediction-Graph](screenshot/graph.png)
 
-### Result Page
+### Result - Chart
 ![Prediction chart](screenshot/chart.png)
 
 ## Model Training
