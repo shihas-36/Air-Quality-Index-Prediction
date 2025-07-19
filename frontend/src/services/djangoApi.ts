@@ -1,7 +1,5 @@
 // Django API service
-const DJANGO_API_URL = process.env.NODE_ENV === 'production' 
-  ? "https://aqi-prediction-future.onrender.com/api"  // Your actual Render URL
-  : "http://localhost:8000/api";
+const DJANGO_API_URL = "https://aqi-prediction-future.onrender.com/api";
 
 export interface PredictionRequest {
   city: string;
