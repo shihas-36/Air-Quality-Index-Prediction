@@ -88,33 +88,38 @@ def predict_aqi(request):
     try:
         data = json.loads(request.body)
         city = data.get('city', '').strip()
-        date = data.get('date', datetime.now().strftime('%Y-%m-%d'))
-        
+        date = data.get('date', None)
+
         if not city:
             return JsonResponse({'error': 'City name required', 'status': 'error'}, status=400)
-        
+
+        # If date is missing, None, or empty, use current date
+        if not date:
+            date = datetime.now().strftime('%Y-%m-%d')
+
+        try:
+            start_date = datetime.strptime(date, '%Y-%m-%d')
+        except Exception as e:
+            return JsonResponse({'error': f'Invalid date format: {e}', 'status': 'error'}, status=400)
+
         # Generate 7-day predictions
         predictions = []
-        start_date = datetime.strptime(date, '%Y-%m-%d')
-
         for i in range(-3, 4):
             pred_date = start_date + timedelta(days=i)
             pred_date_str = pred_date.strftime('%Y-%m-%d')
-            
             predicted_aqi, category = predict_city_aqi(city, pred_date_str)
-            
             predictions.append({
                 'date': pred_date_str,
                 'aqi': predicted_aqi,
                 'category': category if predicted_aqi else 'Unknown'
             })
-        
+
         return JsonResponse({
             'city': city,
             'predictions': predictions,
             'status': 'success'
         })
-        
+
     except Exception as e:
         logger.error(f"Prediction error: {str(e)}")
         return JsonResponse({'error': str(e), 'status': 'error'}, status=500)
