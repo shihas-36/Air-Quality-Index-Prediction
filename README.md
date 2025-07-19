@@ -19,10 +19,15 @@ Dataset is located in: [here](content/data.csv)
 👉 [Visit Backend Repository](backend)
 
 ## 🔗 Frontend Repository
-👉 [Visit Backend Repository](frontend)
+👉 [Visit Frontend Repository](frontend)
 
 ## 🌐 Live Website
 👉 [Visit](https://aqi-prediction-future-three.vercel.app/)
+
+## Note
+
+The first request will be slow as waking up Render backend initially takes a few seconds.
+
 
 ## 📸 Screenshots
 
