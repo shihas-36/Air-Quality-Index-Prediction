@@ -135,6 +135,7 @@ CORS_ALLOWED_ORIGINS = [
 # Allow all Vercel deployments for this project
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^https://aqi-prediction-future.*\.vercel\.app$",  # Match any Vercel deployment URL
+    r"^air-quality-index-prediction-taupe.*\.vercel\.app$",  # Match any Vercel deployment URL
 ]
 
 CORS_ALLOW_CREDENTIALS = True
