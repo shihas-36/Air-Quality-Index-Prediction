@@ -48,7 +48,7 @@ The machine learning model for this project was trained and evaluated in a Googl
 
 
 
-**[Python Notebook Link](content/ProjectAQI.ipynb)**
+**[Python Notebook Link](content/ProjectAQI.ipynb)**\n
 **[Google Collab  Link](content/ProjectAQI.ipynb)**
 
 
