@@ -1,60 +1,54 @@
-# Welcome to your Lovable project
+# ✈ Flight Fare Prediction Project
 
-## Project info
+## 📄 Abstract
 
-**URL**:https://aqi-prediction-future-three.vercel.app/
-## How can I edit this code?
+Air Quality Index (AQI) Prediction Model 🌫
+This repository presents a daily forecasting model designed for predicting the Air Quality Index (AQI) for a specific region. Leveraging historical air quality data, meteorological parameters, and potentially other relevant features (e.g., traffic data, industrial activity), this project aims to provide accurate and timely forecasts of air pollution levels. The core of this prediction system is built upon Facebook's Prophet forecasting model, an additive regression model ideal for time series analysis with strong seasonal components and holidays. The primary goal is to develop a robust and generalizable prediction tool that can support public health advisories, environmental monitoring, and urban planning by providing insights into future air quality conditions. The project features a frontend deployed on Vercel for user interaction and visualization, while the backend API and prediction service are hosted on Render. This repository includes code for data preprocessing, model training, evaluation, and deployment considerations, making it a comprehensive resource for understanding and replicating AQI prediction efforts using the Prophet model.
 
-There are several ways of editing your application.
+## 📁 Dataset
+Dataset is located in: [here](content/data.csv)
 
-
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+## 🔧 Tech Stack
+- Python (Flask)
+- React + Vite
 - Tailwind CSS
+- Facebook Prophet, pandas, joblib
+- Hosted on: Render (backend) & Vercel (frontend)
 
+## 🔗 Backend Repository
+👉 [Visit Backend Repository](backend)
+
+## 🔗 Frontend Repository
+👉 [Visit Backend Repository](frontend)
+
+## 🌐 Live Website
+👉 [Visit](https://aqi-prediction-future-three.vercel.app/)
+
+## 📸 Screenshots
+
+### Homepage
+![Homepage](screenshot/home.png)
+
+### Prediction Page
+![Prediction-Graph](screenshot/graph.png)
+
+### Result Page
+![Prediction chart](screenshot/chart.png)
+
+## Model Training
+
+
+
+The machine learning model for this project was trained and evaluated in a Google Colab notebook. You can view the complete data analysis, model training, and evaluation process here:
+
+
+
+**[Python Notebook link Link](content/ProjectAQI.ipynb)**
+
+
+## Created By
+
+
+
+Rohit Kumar J, Shihas S, Sidharth Chand Manoj , Sidharth C N
 
